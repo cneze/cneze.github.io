@@ -426,6 +426,28 @@
   .hero-text { animation: fadeUp 0.9s ease 0.2s both; }
   .hero-visual { animation: fadeUp 0.9s ease 0.4s both; }
 
+  /* ─── IMPACT ─── */
+  #impact { background: var(--dark); }
+  .stats-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem; margin-top: 2.5rem; }
+  .stat-card {
+    padding: 1.6rem 1rem;
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 2px solid var(--gold);
+    border-radius: 4px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .stat-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+  .stat-number {
+    font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 900;
+    color: var(--gold-light); line-height: 1.1; margin-bottom: 0.5rem;
+  }
+  .stat-label { font-size: 0.78rem; color: var(--grey-light); line-height: 1.4; }
+  @media (max-width: 900px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
   /* ─── AFFILIATIONS ─── */
   #affiliations { background: var(--dark2); }
   .affiliations-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -476,6 +498,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#impact">Impact</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#affiliations">Affiliations</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
@@ -618,7 +641,7 @@
     <div class="section-tag">Other Qualifications</div>
     <h3 class="section-title" style="font-size:1.6rem;">Certifications</h3>
   </div>
-  <div class="edu-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 700px;">
+  <div class="edu-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 1000px;">
     <div class="edu-card" style="border-top-color: var(--teal);">
       <div class="edu-year">2023</div>
       <div class="edu-degree">Diploma in Data Analysis</div>
@@ -628,6 +651,11 @@
       <div class="edu-year">2023</div>
       <div class="edu-degree">Diploma in Graphic Design</div>
       <div class="edu-institution">Digital Dreams Academy</div>
+    </div>
+    <div class="edu-card" style="border-top-color: var(--gold);">
+      <div class="edu-year">2026</div>
+      <div class="edu-degree">Sports Business Masterclass</div>
+      <div class="edu-institution">My Intellectual Property Law Guide (MIPLG) &amp; Stren &amp; Blan Partners</div>
     </div>
   </div>
 </section>
@@ -667,7 +695,7 @@
     <div class="timeline-item">
       <div class="tl-date">Aug 2023<br>— May 2024</div>
       <div class="tl-content">
-        <div class="tl-role">Human Resources Staff</div>
+        <div class="tl-role">Human Resources Officer</div>
         <div class="tl-company">Peace Group of Companies · Emene, Enugu</div>
         <div class="tl-desc">Managed staff records using MTS and ERP systems. Supported recruitment, coordinated leave schedules, and maintained efficient filing systems. Streamlined staff record management by leveraging ERP and MTS platforms, reducing data retrieval time and improving accuracy of personnel documentation across departments.</div>
       </div>
@@ -681,12 +709,61 @@
       </div>
     </div>
     <div class="timeline-item">
-      <div class="tl-date">2019 — 2020</div>
+      <div class="tl-date">2017 — 2020</div>
       <div class="tl-content">
         <div class="tl-role">Secretary</div>
         <div class="tl-company">Shina Fashugba's Chambers · 17/19 Allen Avenue, Ikeja</div>
-        <div class="tl-desc">Typed and filed legal documents and correspondence. Established an efficient document filing and retrieval system that reduced time spent locating correspondence and legal briefs, improving the chambers' administrative responsiveness.</div>
+        <div class="tl-desc">Managed legal correspondence, client records and administrative documentation. Established an efficient document filing and retrieval system that reduced time spent locating correspondence and legal briefs, improving the chambers' administrative responsiveness.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+  <div class="section-header">
+    <div class="section-tag">Beyond the Practice</div>
+    <h2 class="section-title">Community Impact<br><em>&amp; Training</em></h2>
+  </div>
+  <div class="divider"></div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="tl-date">2013<br>— 2023</div>
+      <div class="tl-content">
+        <div class="tl-role">Volunteer</div>
+        <div class="tl-company">CEDIO Rural Outreach Ministry</div>
+        <div class="tl-desc">Coordinated logistics, beneficiary registration and programme documentation during medical outreach missions, supporting efficient healthcare delivery in underserved communities. Served as a volunteer teacher in CEDIO Primary and Secondary Schools, Umu-Olum, Akwukwu-Igbo, Delta State, contributing to educational development in rural communities. Maintained outreach records and programme documentation supporting accountability and effective programme implementation over ten years of service.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-date">2023<br>— 2024</div>
+      <div class="tl-content">
+        <div class="tl-role">Digital Skills Trainer</div>
+        <div class="tl-company">Independent</div>
+        <div class="tl-desc">Delivered personalised training in Data Analytics and Graphic Design to Reverend Sisters preparing for international academic and professional engagements. Developed practical, project-based learning exercises and provided ongoing mentorship, training over 10 learners in digital productivity skills applicable to academic and professional environments.</div>
+      </div>
+    </div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">100+</div>
+      <div class="stat-label">Communities reached through medical outreach programmes</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">10+</div>
+      <div class="stat-label">States across Nigeria covered by outreach interventions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">50,000+</div>
+      <div class="stat-label">Beneficiaries provided with free healthcare services</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">200+</div>
+      <div class="stat-label">Surgical procedures supported through outreach programmes</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">4</div>
+      <div class="stat-label">States where educational institutions were established</div>
     </div>
   </div>
 </section>
